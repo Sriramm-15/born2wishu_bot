@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birthday Reminder Bot 🎂</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Floating emojis -->
+  <div class="floating-emoji" style="top: 20%; left: 10%; animation-delay: 0s;">🎂</div>
+  <div class="floating-emoji" style="top: 60%; right: 15%; animation-delay: 2s;">🎉</div>
+  <div class="floating-emoji" style="top: 40%; left: 80%; animation-delay: 4s;">🎈</div>
+  <div class="floating-emoji" style="top: 80%; left: 20%; animation-delay: 6s;">🎁</div>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-content">
+      <div class="logo">🎂 Born2WishU</div>
+      <nav>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#commands">Commands</a></li>
+          <li><a href="#howitworks">How It Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="fade-in">Never Miss a Birthday Again! 🎉</h1>
+      <p class="fade-in">A Telegram bot that sends birthday reminders straight to your chat – simple, smart, and sentimental!</p>
+      <div class="fade-in">
+        <a href="https://t.me/Born2wishu_bot" class="btn btn-primary">Try the Bot</a>
+        <a href="#howitworks" class="btn btn-secondary" style="margin-left: 1rem;">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section">
+    <div class="container">
+      <h2>Amazing Features</h2>
+      <div class="features-grid">
+        <div class="card">
+          <h3 class="card-title">📅 Daily Reminders</h3>
+          <p>Automatically sends birthday reminders every morning at 9:00 AM with age calculations and contact details.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">🎂 Smart Gender Detection</h3>
+          <p>Intelligently detects gender from names and uses appropriate pronouns (him/her/them) in birthday messages.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">💾 JSON Data Management</h3>
+          <p>Simple <code>data.json</code> file format with name, phone, and date of birth. Falls back to sample data for testing.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">🤖 Interactive Commands</h3>
+          <p>Use <code>/today</code>, <code>/tomorrow</code>, <code>/all</code>, and <code>/help</code> commands to check birthdays anytime.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">📱 Contact Integration</h3>
+          <p>Includes phone numbers in reminders so you can quickly call or text birthday wishes to your contacts.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">🎯 Precise Age Calculation</h3>
+          <p>Calculates exact age considering leap years and displays "turning X years old" for upcoming birthdays.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bot Commands Section -->
+  <section id="commands" class="section">
+    <div class="container">
+      <h2>Bot Commands 🤖</h2>
+      <div class="features-grid">
+        <div class="card">
+          <h3 class="card-title">📋 /start</h3>
+          <p>Welcome message with setup instructions and available commands overview.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">📅 /today</h3>
+          <p>Check today's birthdays with age, phone number, and personalized pronouns.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">🔮 /tomorrow</h3>
+          <p>Preview tomorrow's birthdays so you can prepare your wishes in advance.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">📖 /all</h3>
+          <p>Display complete birthday list with formatted dates and contact information.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">🆘 /help</h3>
+          <p>Detailed setup instructions, data format examples, and installation guide.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Details Section -->
+  <section class="section">
+    <div class="container">
+      <h2>Technical Features 🔧</h2>
+      <div class="features-grid">
+        <div class="card">
+          <h3 class="card-title">🔄 Auto-Scheduling</h3>
+          <p>Smart scheduling system that calculates time until next 9 AM reminder and sets up daily intervals.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">🛡️ Error Handling</h3>
+          <p>Robust error handling for file operations, API calls, and graceful fallbacks to sample data.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">📊 Data Format</h3>
+          <p>Simple JSON structure: <code>{"name": "John Doe", "phone": "+1-555-0123", "dob": "1990-01-15"}</code></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="howitworks" class="section">
+    <div class="container">
+      <h2>How It Works 🤖</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Set Up Your Bot</h3>
+          <p>Get bot token from @BotFather and your chat ID from @userinfobot</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Create Data File</h3>
+          <p>Create data.json with names, phones, and birth dates</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Deploy & Enjoy</h3>
+          <p>Run the bot and get automatic daily reminders at 9:00 AM!</p>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="https://github.com/your-repo" class="btn btn-secondary">View Source Code</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Get in Touch ☎️</h2>
+      <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem; color: #666;">
+        Need help with setup? Found a bug? Want to contribute? Reach out!
+      </p>
+      <div style="text-align: center;">
+        <a href="mailto:sriramalla6@gmail.com" class="btn btn-success">Send Email</a>
+        <a href="https://t.me/Born2wishu_bot" class="btn btn-secondary" style="margin-left: 1rem;">Try the Bot</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Born2WishU. Built with ❤️ for unforgettable birthdays.</p>
+      <p><a href="https://t.me/Born2wishu_bot">Telegram</a> | <a href="https://github.com/your-repo">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Add scroll effect to header
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) {
+        header.style.background = 'rgba(255, 255, 255, 0.95)';
+        header.style.backdropFilter = 'blur(20px)';
+      } else {
+        header.style.background = 'rgba(255, 255, 255, 0.1)';
+        header.style.backdropFilter = 'blur(10px)';
+      }
+    });
+
+    // Add floating animation to more emojis
+    function addFloatingEmoji() {
+      const emojis = ['🎂', '🎉', '🎈', '🎁', '🎊', '🥳'];
+      const emoji = document.createElement('div');
+      emoji.className = 'floating-emoji';
+      emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+      emoji.style.left = Math.random() * 100 + '%';
+      emoji.style.top = Math.random() * 100 + '%';
+      emoji.style.animationDelay = Math.random() * 6 + 's';
+      document.body.appendChild(emoji);
+
+      setTimeout(() => {
+        emoji.remove();
+      }, 8000);
+    }
+
+    // Add new floating emojis periodically
+    setInterval(addFloatingEmoji, 3000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "born2wishu",
+  "version": "1.0.0",
+  "main": "bdaybot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "node-cron": "^4.2.0",
+    "node-fetch": "^2.7.0",
+    "node-telegram-bot-api": "^0.66.0"
+  }
+}
